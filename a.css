@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.xiangkuang{
+    width: 100%;
+    height: 300px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .container {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .swithDivContain {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 引言部分 */
+.indexImg {
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(200deg,#005bea,#00c6fb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 1s;
+}
+
+.indexImgMoveup {
+
+    transform: translateY(-100vh);
+}
+
+@keyframes breath {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+.seeMore {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 5vh;
+    color: rgb(255, 255, 255);
+    animation: breath 2s ease-in-out infinite;
+}
+.showMe {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+}
+.showMeMoveup {
+    transform: translateY(-100vh);
+}
+/* 引言部分结束 */
+
+/* 个人介绍 */
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.headImg {
+    width: 236px;
+    height: 241px;
+    border: solid 5px #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgb(185, 185, 185);
+    background-size: contain;
+    animation: rotate360 10s linear infinite;
+    margin: 0 auto;
+    margin-top: 1vh;
+}
+/* 这里是百叶窗的css */
+/* li{
+    list-style: none;
+}
+.box{
+    position:center;
+    width: 220px;
+    height: 680px;
+    transition: all 0.3s;
+}
+.box li{
+    position:relative;
+     width: 200px;
+     height: 100px;
+    transition: all 0.3s;
+}
+.box li .text{
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.box:hover li{
+    width: 200px;
+}
+.box li:hover{
+    width: 100px;
+}
+.card {
+    padding: 10px;
+    background-color: rgb(126, 114, 114);
+    border: none;
+    border-radius: 6px;
+    -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+  }
+
+  .card:hover {
+    box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);
+    transform: translate(0,200px);
+    transition-delay: 0s !important;
+  }
+
+  .box-shadow {
+    -webkit-box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+    box-shadow: 0 4px 16px rgba(48, 55, 66, 0.15);
+  } */
+  #plane{
+      color: #000;
+      font-size: 50px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
